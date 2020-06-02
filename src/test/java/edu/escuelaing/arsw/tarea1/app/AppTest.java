@@ -31,12 +31,24 @@ public class AppTest
     /**
      * Rigourous Test the main method
      */
-    public void testApp()
+    public void testFileReaderByLOC()
     {   
-        String file = "src/test/resources/App.java";
+        String readType = "loc";
+        String file = "src/test/resources/Prueba2.java";
         FileReader fr= new FileReader();
         LineCounter lc = new LocLinesCounter();        
-        fr.readFile(file, lc);
-        assertTrue( 22 == lc.getLineCount());   
+        fr.readFile(readType, file, lc);
+        System.out.println(lc.getLineCount());
+        assertTrue( 56 == lc.getLineCount());   
+    }
+    public void testFileReaderByPHY()
+    {   
+        String readType = "phy";
+        String file = "src/test/resources/Prueba2.java";
+        FileReader fr= new FileReader();
+        LineCounter lc = new LocLinesCounter();        
+        fr.readFile(readType, file, lc);
+        System.out.println(lc.getLineCount());
+        assertTrue( 95 == lc.getLineCount());   
     }
 }

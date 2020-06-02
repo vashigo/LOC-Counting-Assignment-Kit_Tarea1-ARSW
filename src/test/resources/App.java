@@ -6,7 +6,6 @@ import edu.escuelaing.arsw.intro.linecounter.PhysicalLinesCounter;
 
 /**
  * Hello world!
- *
  */
 public class App 
 {

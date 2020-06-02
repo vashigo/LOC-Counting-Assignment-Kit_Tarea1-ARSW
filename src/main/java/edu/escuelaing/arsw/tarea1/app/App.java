@@ -8,10 +8,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        String file = args[0];
+        String readType = args[0];
+        String file = args[1];
         FileReader fr= new FileReader();
         LineCounter lc = new LocLinesCounter();        
-        fr.readFile(file, lc);
+        fr.readFile(readType,file, lc);
         System.out.println("Physical Lines: " + lc.getLineCount());
     }
 }
