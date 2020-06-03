@@ -18,6 +18,13 @@ Articulo donde se explica la arquitectura, diseño y pruebas del aplicativo.
 
 [Link Articulo](https://drive.google.com/file/d/14IT4qMXiJTbCUXS5L0VchGpdDZWlI68S/view?usp=sharing)
 
+# Documentación
+
+la documentacion de este proyecto esta en la siguiente ruta del proyecto:
+```
+raiz /doc
+```
+
 
 ## EMPEZAR
 
@@ -38,7 +45,7 @@ Tener instalado Java jdk versiones 7+, Maven comandos y git
 $$ mvn package
 ```
 2.(opcional):
-si requiere a documentacion del codigo ejecute y estara en raiz /target:
+si requiere la documentacion del codigo ejecute y estara en raiz /target:
 
 ```
 mvn javadoc:javadoc
