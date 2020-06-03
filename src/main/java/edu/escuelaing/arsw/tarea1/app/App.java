@@ -13,6 +13,6 @@ public class App
         FileReader fr= new FileReader();
         LineCounter lc = new LocLinesCounter();        
         fr.readFile(readType,file, lc);
-        System.out.println("Physical Lines: " + lc.getLineCount());
+        System.out.println("Physical Lines by method " + readType + " is: " + lc.getLineCount());
     }
 }

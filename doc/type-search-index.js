@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"edu.escuelaing.arsw.tarea1.app","l":"App"},{"p":"edu.escuelaing.arsw.tarea1.app.linecounter","l":"FileReader"},{"p":"edu.escuelaing.arsw.tarea1.app.linecounter","l":"LineCounter"},{"p":"edu.escuelaing.arsw.tarea1.app.linecounter","l":"LocLinesCounter"}]

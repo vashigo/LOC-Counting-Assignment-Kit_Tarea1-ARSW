@@ -17,6 +17,18 @@ public class FileReader {
     public FileReader() {
     }
 
+    /**
+     * read File.
+     *
+     * this command will read line by line the file where it will analyze
+     * according to whether it is "phy" or "loc" it will proceed to the check
+     * and will execute the sums of the line
+     *
+     * @param readType - the type of file reading if it is by 'phy' or by 'loc'.
+     * @param filePath - The path of file to read.
+     * @param lc - The class LineCounter, who will be responsible for keeping
+     * track of the lines
+     */
     public void readFile(String readType, String filePath, LineCounter lc) {
         Charset charset = Charset.forName("UTF-8");
         Path file= Paths.get(filePath);
@@ -34,26 +46,43 @@ public class FileReader {
                         lc.count(line);
                     } 
                 }
-            } catch (IOException x) {
+            } catch (Exception x) {
                 System.err.format("IOException: %s%n", x);
             }
+        }else{
+            System.out.println("you have to enter first value 'loc' or 'phy' you have: " + readType);
         }
     }
-    
+
+    /**
+     * validate read type.
+     *
+     * this command verifies that readtype is exclusively "phy" or "loc"
+     *
+     * @param type - the type of file reading if it is by 'phy' or by 'loc'.
+     * @return true if is 'phy' or 'loc' and false if not
+     */
     private boolean validateReadType(String type) {
 
         boolean isValidate = false;
-        try{
-            if(type.equals("loc") || type.equals("phy") ){
-                isValidate = true;
-            }
-        }catch(Exception e){
-            System.out.println("you have to enter first value 'loc' or 'phy' you have: " + type);  
+
+        if(type.equals("loc") || type.equals("phy") ){
+            isValidate = true;
         }
-        
+
         return isValidate;
     }    
 
+    /**
+     * read File.
+     *
+     * this command will read line by line the file where it will analyze
+     * according to whether it is "phy" or "loc" it will proceed to the check
+     * and will execute the sums of the line
+     *
+     * @param line - the line x of the file in string format.
+     * @return true if the line is a comment or false if not.
+     */
     private boolean isCommentLine(String line) {
 
         boolean isComment = false;

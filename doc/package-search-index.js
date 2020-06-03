@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"edu.escuelaing.arsw.tarea1.app"},{"l":"edu.escuelaing.arsw.tarea1.app.linecounter"}]
