@@ -5,6 +5,15 @@ Write a program to Count the Lines of Code of a source file. The Lines Of Code (
 # LOC/h. Rendimiento
 
 1. desde las 11:00 am, hasta las 1:11 pm - fueron en total 184 LOC
+1. desde las 1:30 pm, hasta las 4:25 pm - fueron en total 74 LOC
+1. desde las 8:20 pm, hasta las 9:31 pm - fueron en total 100 LOC
+
+# Link del Articulo del proyecto
+
+Articulo donde se explica la arquitectura, diseño y pruebas del aplicativo.
+
+[Link Articulo](https://drive.google.com/file/d/14IT4qMXiJTbCUXS5L0VchGpdDZWlI68S/view?usp=sharing)
+
 
 ## EMPEZAR
 
@@ -32,11 +41,13 @@ mvn javadoc:javadoc
 ```
 
 2. (Demostracion):
-  compile el proyecto desde la carpeta raiz ejecutando la siguiente linea:
+  compile el proyecto desde la carpeta raiz ejecutando la siguiente linea dependendiendo del metodo de lectura si es 'loc' o 'phy' que en este caso el comando estara con loc:
   
 ```
-java -cp target/tarea1-app-1.0-SNAPSHOT.jar edu.escuelaing.arsw.tarea1.app.App  src/test/resources/App.java
+java -cp target/tarea1-app-1.0-SNAPSHOT.jar edu.escuelaing.arsw.tarea1.app.App loc src/test/resources/App.java
 ```
+
+![Imágen 1](img/img1.JPG)
   
 
 ## Built con
