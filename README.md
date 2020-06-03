@@ -4,9 +4,13 @@ Write a program to Count the Lines of Code of a source file. The Lines Of Code (
 
 # LOC/h. Rendimiento
 
-1. desde las 11:00 am, hasta las 1:11 pm - fueron en total 184 LOC
-1. desde las 1:30 pm, hasta las 4:25 pm - fueron en total 74 LOC
-1. desde las 8:20 pm, hasta las 9:31 pm - fueron en total 100 LOC
+1. desde las 11:00 am, hasta las 1:11 pm - fueron en total 184 lineas 
+2. desde las 1:30 pm, hasta las 4:25 pm - fueron en total 74 lineas 
+3. desde las 8:20 pm, hasta las 9:31 pm - fueron en total 100 lineas 
+
+LOC = (358L/6h)
+
+## 60 LOC
 
 # Link del Articulo del proyecto
 
